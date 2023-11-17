@@ -42,7 +42,7 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   def destroy
     @article.destroy!
-    redirect_to articles_path, notice: "Article was successfully destroyed.", status: :see_other
+    redirect_to root_path, notice: "Article was successfully destroyed.", status: :see_other
   end
 
   private
@@ -53,6 +53,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, photos: [])
     end
 end
