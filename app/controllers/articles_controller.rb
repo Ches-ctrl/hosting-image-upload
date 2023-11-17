@@ -42,7 +42,7 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   def destroy
     @article.destroy!
-    redirect_to articles_url, notice: "Article was successfully destroyed.", status: :see_other
+    redirect_to articles_path, notice: "Article was successfully destroyed.", status: :see_other
   end
 
   private
