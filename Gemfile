@@ -64,3 +64,12 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "ruby-openai"
+gem "dotenv"
+gem "simple_form"
+gem "faker"
+gem "sassc-rails"
+gem "bootstrap"
+gem "font-awesome-sass"
+gem "autoprefixer-rails"
